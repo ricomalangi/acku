@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context=".ServiceFragment">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keluhan/Masalah AC"
+                    android:textColor="@color/text_main_blue"
+                    android:textStyle="bold"
+
+                    />
+                <CheckBox
+                    android:id="@+id/service_rutin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service rutin"
+                    android:textColor="@color/text_main_blue"
+                    android:buttonTint="@color/text_main_blue"
+                    />
+                <CheckBox
+                    android:id="@+id/ac_tidak_dingin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC tidak dingin"
+                    android:textColor="@color/text_main_blue"
+                    android:buttonTint="@color/text_main_blue"
+                    />
+                <CheckBox
+                    android:id="@+id/ac_berisik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC berisik"
+                    android:textColor="@color/text_main_blue"
+                    android:buttonTint="@color/text_main_blue"
+                    />
+                <CheckBox
+                    android:id="@+id/ac_rusak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC rusak"
+                    android:textColor="@color/text_main_blue"
+                    android:buttonTint="@color/text_main_blue"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Layanan yang tersedia"
+                    android:textColor="@color/text_main_blue"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/header"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:layout_constraintVertical_bias="0.043" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuci AC 0.5 - 1PK"
+                    android:textColor="@color/text_main_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 45.000"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="@+id/textView20"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/removeBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_minus"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView21"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.74"
+                    app:layout_constraintStart_toEndOf="@+id/textView21"
+                    app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/value1pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtn"
+                    app:layout_constraintEnd_toStartOf="@+id/addBtn"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtn"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtn" />
+
+                <Button
+                    android:id="@+id/addBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_add"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtn"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtn" />
+
+                <View
+                    android:id="@+id/view1pk"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/header"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view1pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/cuciAC2pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuci AC 1.5 - 2PK"
+                    android:textColor="@color/text_main_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/hargaCuciAC2pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 75.000"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintEnd_toEndOf="@+id/cuciAC2pk"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cuciAC2pk"
+                    app:layout_constraintTop_toBottomOf="@+id/cuciAC2pk"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/removeBtn2pk"
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_minus"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/hargaCuciAC2pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.74"
+                    app:layout_constraintStart_toEndOf="@+id/hargaCuciAC2pk"
+                    app:layout_constraintTop_toTopOf="@+id/cuciAC2pk" />
+
+                <TextView
+                    android:id="@+id/value2pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtn2pk"
+                    app:layout_constraintEnd_toStartOf="@+id/addBtn2pk"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtn2pk"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtn2pk" />
+
+                <Button
+                    android:id="@+id/addBtn2pk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_add"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtn2pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtn2pk"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtn2pk" />
+
+                <View
+                    android:id="@+id/view2pk"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hargaCuciAC2pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/header"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/cuciInverter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuci AC Inverter 0.5 - 2PK"
+                    android:textColor="@color/text_main_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/hargaCuciInverter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 75.000"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="@+id/cuciInverter"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cuciInverter"
+                    app:layout_constraintTop_toBottomOf="@+id/cuciInverter"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/removeBtnInverter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_minus"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/hargaCuciInverter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.74"
+                    app:layout_constraintStart_toEndOf="@+id/hargaCuciInverter"
+                    app:layout_constraintTop_toTopOf="@+id/cuciInverter" />
+
+                <TextView
+                    android:id="@+id/valueInverter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtnInverter"
+                    app:layout_constraintEnd_toStartOf="@+id/addBtnInverter"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtnInverter"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtnInverter" />
+
+                <Button
+                    android:id="@+id/addBtnInverter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_add"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtnInverter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtnInverter"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtnInverter" />
+
+                <View
+                    android:id="@+id/viewInverter"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hargaCuciInverter"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/header"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewInverter"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/pasang1pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pasang AC 0.5 - 1PK"
+                    android:textColor="@color/text_main_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/hargaPasang1pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 75.000"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="@+id/pasang1pk"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/pasang1pk"
+                    app:layout_constraintTop_toBottomOf="@+id/pasang1pk"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/removeBtnPasang1pk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_minus"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/hargaPasang1pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.74"
+                    app:layout_constraintStart_toEndOf="@+id/hargaPasang1pk"
+                    app:layout_constraintTop_toTopOf="@+id/pasang1pk" />
+
+                <TextView
+                    android:id="@+id/valuePasang1pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtnPasang1pk"
+                    app:layout_constraintEnd_toStartOf="@+id/addBtnPasang1pk"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtnPasang1pk"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtnPasang1pk" />
+
+                <Button
+                    android:id="@+id/addBtnPasang1pk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_add"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtnPasang1pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtnPasang1pk"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtnPasang1pk" />
+
+                <View
+                    android:id="@+id/viewPasang1pk"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hargaPasang1pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/header"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewPasang1pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/pasang2pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pasang AC 1.5 - 2PK"
+                    android:textColor="@color/text_main_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView6"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/hargaPasang2pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 75.000"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="@+id/pasang2pk"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/pasang2pk"
+                    app:layout_constraintTop_toBottomOf="@+id/pasang2pk"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/removeBtnPasang2pk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_minus"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/hargaPasang2pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.74"
+                    app:layout_constraintStart_toEndOf="@+id/hargaPasang2pk"
+                    app:layout_constraintTop_toTopOf="@+id/pasang2pk" />
+
+                <TextView
+                    android:id="@+id/valuePasang2pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtnPasang2pk"
+                    app:layout_constraintEnd_toStartOf="@+id/addBtnPasang2pk"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtnPasang2pk"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtnPasang2pk" />
+
+                <Button
+                    android:id="@+id/addBtnPasang2pk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_add"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeBtnPasang2pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/removeBtnPasang2pk"
+                    app:layout_constraintTop_toTopOf="@+id/removeBtnPasang2pk" />
+
+                <View
+                    android:id="@+id/viewPasang2pk"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hargaPasang2pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/header"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewPasang2pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tambahFreonR22_1pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah freon R22 0.5 - 1PK"
+                    android:textColor="@color/text_main_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="@+id/imageView7"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/hargaTambahFreonR22_1pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 150.000"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                    app:layout_constraintEnd_toEndOf="@+id/tambahFreonR22_1pk"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/tambahFreonR22_1pk"
+                    app:layout_constraintTop_toBottomOf="@+id/tambahFreonR22_1pk"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/removeTambahFreonR22_1pk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_minus"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/hargaTambahFreonR22_1pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.74"
+                    app:layout_constraintStart_toEndOf="@+id/hargaPasang1pk"
+                    app:layout_constraintTop_toTopOf="@+id/tambahFreonR22_1pk" />
+
+                <TextView
+                    android:id="@+id/valueTambahFreonR22_1pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeTambahFreonR22_1pk"
+                    app:layout_constraintEnd_toStartOf="@+id/addBtnTambahFreonR22_1pk"
+                    app:layout_constraintStart_toEndOf="@+id/removeTambahFreonR22_1pk"
+                    app:layout_constraintTop_toTopOf="@+id/addBtnTambahFreonR22_1pk" />
+
+                <Button
+                    android:id="@+id/addBtnTambahFreonR22_1pk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_add"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeTambahFreonR22_1pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/removeTambahFreonR22_1pk"
+                    app:layout_constraintTop_toTopOf="@+id/removeTambahFreonR22_1pk" />
+
+                <View
+                    android:id="@+id/viewTambahFreonR22_1pk"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hargaTambahFreonR22_1pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/header"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewTambahFreonR22_1pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tambahFreonR22_2pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah freon R22 1.5 - 2PK"
+                    android:textColor="@color/text_main_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="@+id/imageView8"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/hargaTambahFreonR22_2pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 225.000"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                    app:layout_constraintEnd_toEndOf="@+id/tambahFreonR22_2pk"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/tambahFreonR22_2pk"
+                    app:layout_constraintTop_toBottomOf="@+id/tambahFreonR22_2pk"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/removeTambahFreonR22_2pk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_minus"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/hargaTambahFreonR22_2pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.74"
+                    app:layout_constraintStart_toEndOf="@+id/hargaPasang2pk"
+                    app:layout_constraintTop_toTopOf="@+id/tambahFreonR22_2pk" />
+
+                <TextView
+                    android:id="@+id/valueTambahFreonR22_2pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeTambahFreonR22_2pk"
+                    app:layout_constraintEnd_toStartOf="@+id/addBtnTambahFreonR22_2pk"
+                    app:layout_constraintStart_toEndOf="@+id/removeTambahFreonR22_2pk"
+                    app:layout_constraintTop_toTopOf="@+id/addBtnTambahFreonR22_2pk" />
+
+                <Button
+                    android:id="@+id/addBtnTambahFreonR22_2pk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_btn_add"
+                    android:backgroundTint="@color/main_bg_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/removeTambahFreonR22_2pk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/removeTambahFreonR22_2pk"
+                    app:layout_constraintTop_toTopOf="@+id/removeTambahFreonR22_2pk" />
+
+                <View
+                    android:id="@+id/viewTambahFreonR22_2pk"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hargaTambahFreonR22_2pk"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Kontak dan Lokasi"
+                    android:textColor="@color/text_main_blue"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_person_outline_24"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Rico Malangi"
+                    android:textColor="@color/text_main_blue"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="rikomalangi@gmail.com"
+                    android:textColor="@color/text_main_blue"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_phone_24"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="081237573018"
+                    android:textColor="@color/text_main_blue"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="JL. Rappocini Raya"
+                    android:textColor="@color/text_main_blue"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/text_main_blue"
+                />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="Rp 0"
+                android:textColor="@color/text_main_blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/main_bg_color"
+            android:text="Pesan"
+            />
+    </LinearLayout>
+</ScrollView>

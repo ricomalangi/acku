@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <TextView
+        android:id="@+id/txtIndexItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/txtItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List cart"
+        android:textSize="12sp"
+        android:textColor="@color/text_main_blue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEdit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEdit"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/text_warning"
+        android:text="Edit"
+        android:textSize="10sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintLeft_toRightOf="@+id/txtItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

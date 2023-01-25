@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_drawer_navigation_service"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.airconditionerproject.HomeServiceFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_service" >
+        <action
+            android:id="@+id/action_nav_home_to_detailOrderFragment"
+            app:destination="@id/detailOrderFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_pesananYangDiambilFragment"
+            app:destination="@id/pesananYangDiambilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailOrderFragment"
+        android:name="com.example.airconditionerproject.DetailOrderFragment"
+        android:label="Detail Order"
+        tools:layout="@layout/fragment_detail_order" />
+    <fragment
+        android:id="@+id/pesananYangDiambilFragment"
+        android:name="com.example.airconditionerproject.PesananYangDiambilFragment"
+        android:label="Pesanan Diambil"
+        tools:layout="@layout/fragment_pesanan_yang_diambil" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.airconditionerproject.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile_service" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.airconditionerproject.AboutAppServiceFragment"
+        android:label="About App"
+        tools:layout="@layout/fragment_about_app_service" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.airconditionerproject.ActivityServiceFragment"
+        android:label="Riwayat aktivitas"
+        tools:layout="@layout/fragment_activity_service" />
+</navigation>

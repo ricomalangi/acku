@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_drawer_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.airconditionerproject.HomeUserFragment"
+        android:label="ACku App"
+        tools:layout="@layout/fragment_home_user" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_service"
+            app:destination="@id/btnService" />
+        <action
+            android:id="@+id/action_nav_home_to_aktivitasTerbaruFragment"
+            app:destination="@id/aktivitasTerbaruFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.airconditionerproject.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.airconditionerproject.AboutAppFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about_app" />
+    <activity
+        android:id="@+id/btnService"
+        android:name="com.example.airconditionerproject.ServiceActivity"
+        android:label="fragment_service"
+        tools:layout="@layout/activity_service" />
+    <fragment
+        android:id="@+id/aktivitasTerbaruFragment"
+        android:name="com.example.airconditionerproject.AktivitasTerbaruFragment"
+        android:label="Aktivitas Terbaru"
+        tools:layout="@layout/fragment_aktivitas_terbaru" />
+    <fragment
+        android:id="@+id/nav_activity"
+        android:name="com.example.airconditionerproject.ActivityUserFragment"
+        android:label="Riwayat aktivitas"
+        tools:layout="@layout/fragment_activity_user" />
+</navigation>

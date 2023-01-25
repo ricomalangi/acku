@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipeContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeUserFragment"
+        android:padding="14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/sayHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Hello, Rico Malangi"
+            android:textColor="@color/main_bg_color"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Welcome back!"
+            android:textColor="@color/text_main_blue"
+            app:layout_constraintEnd_toEndOf="@+id/sayHello"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/sayHello"
+            app:layout_constraintTop_toBottomOf="@+id/sayHello" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnService"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="Service AC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:drawableLeft="@drawable/ic_tool"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Aktivitas Terbaru Anda"
+            android:textColor="@color/text_main_blue"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnService"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnService"
+            app:layout_constraintTop_toBottomOf="@+id/btnService" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            app:contentPadding="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/btnService"
+            app:layout_constraintStart_toStartOf="@+id/btnService"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:visibility="visible"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sabtu, 29 Oktober 2022"
+                    android:textColor="@color/text_main_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proses"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtTanggal"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="331dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="?android:attr/listDivider"
+                    android:backgroundTint="@color/text_main_blue"
+                    android:outlineAmbientShadowColor="@color/text_main_blue"
+                    android:outlineSpotShadowColor="@color/text_main_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTanggal" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Pembelian layanan:"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                <TextView
+                    android:id="@+id/txtItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Cuci ac 5pk"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Harga"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtItem" />
+
+                <TextView
+                    android:id="@+id/txtTotalHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 75.000"
+                    android:textColor="@color/text_main_blue"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDetailAktivitasTerbaru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail"
+                    android:textAllCaps="false"
+                    app:layout_constraintTop_toBottomOf="@id/txtTotalHarga"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="@color/main_bg_color"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/main_bg_color"
+                    app:strokeWidth="2dp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="4dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/btnService"
+            app:layout_constraintStart_toStartOf="@+id/btnService"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:visibility="invisible"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Aktivitas terbaru kamu akan tampil disini"
+                    android:textColor="@color/text_main_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/empty_activity"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+

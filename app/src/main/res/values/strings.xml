@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AirConditionerProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="login_to_start_your_session">Login to start your session</string>
+    <string name="register">Register</string>
+    <string name="register_to_create_an_account">Register to create an account</string>
+    <string name="title_home">Home</string>
+    <string name="title_activity">Aktivitas</string>
+    <string name="tilte_profile">Profile</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="atur_alamat"><b><u>klik untuk atur alamat</u></b> </string>
+    <string name="alamat_belum_diatur">Alamat belum diatur</string>
+    <string name="history">History</string>
+    <string-array name="list_peran">
+        <item>pengguna</item>
+        <item>tukang servis</item>
+    </string-array>
+    //Headings
+    <string name="heading_one">Pesan Jasa Service</string>
+    <string name="heading_two">Lakukan Order dan Tunggu Status Pemesanan On Process</string>
+    <string name="heading_three">Tukang Service OTW ke Tempatmu</string>
+
+    //Description
+    <string name="desc_one">(pilih keluhan dalam AC kamu dan pilih layanan yang tersedia)</string>
+    <string name="desc_two">(status on process artinya kamu sudah mendapatkan tukang service)</string>
+    <string name="desc_three"></string>
+</resources>

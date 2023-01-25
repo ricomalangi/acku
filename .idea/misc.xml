@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/drawable/corner_shape.xml" value="0.1305" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/drawable/custom_btn_add.xml" value="0.2025" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/drawable/custom_btn_minus.xml" value="0.2025" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/drawable/custom_edit_text.xml" value="0.1305" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/drawable/header.xml" value="0.1655" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/drawable/rounded_header_corner.xml" value="0.1055" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/drawable/side_nav_bar.xml" value="0.1195" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/font/poppins.xml" value="0.2578125" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_about_app.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_edit_item.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_main_servic.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_main_service.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_on_boarding.xml" value="0.2" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_service.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_service_copy.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_splash_screen.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_success.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_success_ambil_orderan.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/activity_success_service.xml" value="0.20208333333333334" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/appbar.xml" value="0.2" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/appbar_service.xml" value="0.21822916666666667" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/content_main_service.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/content_main_user.xml" value="0.21822916666666667" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/custom_dialog_address.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/custom_dialog_item_add.xml" value="0.21822916666666667" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/custom_dialog_message.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_about_app.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_about_app_service.xml" value="0.20208333333333334" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_activity.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_activity_service.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_activity_user.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_aktivitas_terbaru.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_detail_order.xml" value="0.2" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_home_service.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_home_user.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_pesanan_yang_diambil.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_profile_service.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/fragment_service.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/header_nav_draw_layout.xml" value="0.21822916666666667" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/item_rv_aktivitas.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/list_cart.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/list_order.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/list_order_user.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/list_pesanan_diambil.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/main_content.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/layout/slider_layout.xml" value="0.1799145299145299" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/menu/bottom_nav.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/menu/menu_nav_drawer.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/menu/menu_nav_drawer_service.xml" value="0.21927083333333333" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/menu/navigation_drawer.xml" value="0.264" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/xml/filepaths.xml" value="0.164453125" />
+        <entry key="..\:/PROJECT/AirConditionerProject/app/src/main/res/xml/network_security_config.xml" value="0.21822916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
